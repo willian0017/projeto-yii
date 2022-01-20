@@ -12,7 +12,7 @@ use yii\grid\GridView;
 $this->title = 'Inquilinos';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
-<div class="inquilino-model-index">
+<div class="table table-hover ">
 
     <h1><?= Html::encode($this->title) ?></h1>
 

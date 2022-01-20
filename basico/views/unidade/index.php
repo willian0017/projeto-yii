@@ -12,7 +12,7 @@ use yii\grid\GridView;
 $this->title = 'Unidades';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
-<div class="unidade-model-index">
+<div class="table table-hover">
 
     <h1><?= Html::encode($this->title) ?></h1>
 

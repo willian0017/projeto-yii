@@ -2,7 +2,7 @@
 
 /* @var $this yii\web\View */
 
-$this->title = 'CondoController | Home';
+$this->title = 'CondoControll | Home';
 ?>
 <div class="site-index">
 
