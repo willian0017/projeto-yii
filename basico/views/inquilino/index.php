@@ -13,11 +13,11 @@ $this->title = 'Inquilinos';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="table table-hover ">
-
+    
     <h1><?= Html::encode($this->title) ?></h1>
 
     <p>
-        <?= Html::a('Novo inquilino', ['create'], ['class' => 'btn btn-success']) ?>
+        <?= Html::a('Novo inquilino', ['create'], ['class' => 'btn btn-outline-success']) ?>
     </p>
 
     <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
@@ -43,5 +43,23 @@ $this->params['breadcrumbs'][] = $this->title;
         ],
     ]); ?>
 
-
 </div>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&family=Outfit:wght@200&display=swap');    
+    h1{
+        font-family: 'Outfit', sans-serif;
+        text-transform: uppercase;
+    }
+    p{
+        text-align: right;
+    }
+    td, th, a{
+        font-family: 'Outfit', sans-serif;
+    }
+    svg{
+        color: #444444;
+    }
+    input{
+        color: red;
+    }
+</style>

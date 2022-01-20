@@ -32,31 +32,40 @@ AppAsset::register($this);
     NavBar::begin([
         'brandUrl' => Yii::$app->homeUrl,
         'options' => [
-            'class' => 'navbar navbar-expand-md navbar-dark bg-dark fixed-top',
+            'class' => 'navbar navbar-expand-md navbar-dark bg-primary fixed-top',
         ],
     ]);
     echo Nav::widget([
         'options' => ['class' => 'navbar-nav'],
         'items' => [
-            ['label' => 'Inquilinos', 'url' => ['inquilino/index']],
-            ['label' => 'Despesas', 'url' => ['despesa/index']],
-            ['label' => 'Unidades', 'url' => ['unidade/index']],
+            ['label' => 'Página inicial/', 'url' => ['site/index']],
+            ['label' => 'Inquilinos/', 'url' => ['inquilino/index']],
+            ['label' => 'Despesas/', 'url' => ['despesa/index']],
+            ['label' => 'Unidades/', 'url' => ['unidade/index']],
         ],
     ]);
     NavBar::end();
     ?>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');    
+        .navbar-nav{
+            font-family: 'Titillium Web', sans-serif;
+            text-transform: uppercase;
+        }
+    </style>
 </header>
-
 <main role="main" class="flex-shrink-0">
     <div class="container">
         <?= Breadcrumbs::widget([
             'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
+            'options' => [
+                'class' => 'bg-light',
+            ],
         ]) ?>
         <?= Alert::widget() ?>
         <?= $content ?>
     </div>
 </main>
-
 <footer class="footer mt-auto py-3 text-muted">
     <div class="container">
         <p class="float-left">&copy; Willian Tessarolo <?= date('Y') ?></p>
