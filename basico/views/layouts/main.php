@@ -56,11 +56,8 @@ if (class_exists('yii\debug\Module')) {
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&family=Outfit:wght@200&display=swap');    
         .navbar{
-            font-family: 'Titillium Web', sans-serif;
+            font-family: 'Outfit', sans-serif;
             text-transform: uppercase;
-        }
-        .navbar a{
-            font-family: 'Open-Sans', sans-serif;
         }
 
     </style>
