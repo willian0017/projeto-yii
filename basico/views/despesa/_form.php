@@ -18,7 +18,7 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'valor')->textInput() ?>
 
-    <?= $form->field($model, 'vencimento_fatura')->textInput() ?>
+    <?= $form->field($model, 'vencimento_fatura')->dropDownList([ 'vencido' => 'Vencido', 'no prazo' => 'No prazo', ], ['prompt' => ''])  ?>
 
     <?= $form->field($model, 'status_pagamento')->dropDownList([ 'pago' => 'Pago', 'pendente' => 'Pendente', ], ['prompt' => '']) ?>
 

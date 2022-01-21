@@ -31,7 +31,7 @@ class DespesaModel extends \yii\db\ActiveRecord
         return [
             [['descricao', 'tipo_despesa', 'valor', 'vencimento_fatura', 'status_pagamento'], 'required'],
             [['descricao', 'status_pagamento'], 'string'],
-            [['valor'], 'integer'],
+            [['valor:'], 'integer'],
             [['vencimento_fatura'], 'safe'],
             [['tipo_despesa'], 'string', 'max' => 255],
         ];
